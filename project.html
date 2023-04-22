@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Subject Allotment System</title>
+    <link rel="stylesheet" href="project.css" />
+  </head>
+  <body>
+    <div class="hero">
+      
+      <nav>
+        <img src="https://creator.zohopublic.com/srm_university/academia-academic-services/Image_Sourses_Report/2727643000229985225/Image/image-download/5YzR0Wf3yxnuA2p2008wCne7Gud8VAFTMfY3w2nDuStF9UzJWVjpghPXeThO09w2AMmmgX0mFmyFRKJX2fQAHZeRjqANQqGty7tS/1631332744442_academia-new.jpg"alt="" class="logo" />
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="feature.html">Features</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <img
+          src="images/user.png"
+          alt=""
+          class="user-pic"
+          onclick="toggleMenu()"
+        />
+        <div class="sub-menu-wrap" id="subMenu">
+          <div class="sub-menu">
+            <div class="user-info">
+              <img src="images/user.png" alt="" />
+              <h3>James Aldrino</h3>
+            </div>
+            <hr />
+
+            <a href="#" class="sub-menu-link">
+              <img src="images/profile.png" alt="" />
+              <p>Edit Profile</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="images/setting.png" alt="" />
+              <p>Settings & Privacy</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="images/help.png" alt="" />
+              <p>Help & Support</p>
+              <span>></span>
+            </a>
+            <a href="#" class="sub-menu-link">
+              <img src="images/logout.png" alt="" />
+              <p>Logout</p>
+              <span>></span>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <div class="main">
+        <div class="menu">
+          <label>Name : </label>
+          <select name="Names" id="main-menu" style="margin-left: 97px;">
+            <option>--Select Your Name--</option>
+            <option value="Albert Einstein">Albert Einstein</option>
+            <option value="Marie Curie">Marie Curie</option>
+            <option value="Alexander Graham Bell">Alexander Graham Bell</option>
+            <option value="Neil Armstrong">Neil Armstrong</option>
+            <option value="Amartya Sen">Amartya Sen</option>
+            <option value="Judith Butler">Judith Butler</option>
+            
+          </select>
+        </div>
+        <div class="menu">
+          <label>Course : </label>
+          <select name="Names" id="main-menu" style="margin-left: 89px;">
+            <option>--Select the Course--</option>
+            <option value="Albert Einstein">Computer Science and Engineering</option>
+            <option value="Marie Curie">Computer Science and Engineering with AI/ML </option>
+            <option value="Alexander Graham Bell">Electrical Engineering</option>
+
+          </select>
+        </div>
+        <div class="menu">
+          <label>Elective subjects : </label>
+          <select name="Names" id="main-menu"style="margin-left: 12px;">
+            <option>--Select Elective subjects--</option>
+            <option value="Albert Einstein">Critical and Creative Thinking</option>
+            <option value="Marie Curie">Environmental Science</option>
+            <option value="Alexander Graham Bell">Biology</option>
+            <option value="Neil Armstrong">Professional Skill and Practices</option>
+           
+          </select>
+        </div>
+        <div class="menu">
+          <label>Core Subjects : </label>
+          <select name="Names" id="main-menu"style="margin-left: 35px;">
+            <option>--Select Core subjects--</option>
+            <option value="Albert Einstein">Operating System</option>
+            <option value="Marie Curie">Chemistry</option>
+            <option value="Alexander Graham Bell">Semiconductor Physics</option>
+            <option value="Neil Armstrong">Discrete Mathematics</option>
+            <option value="Amartya Sen">Computer Organisation and Architecture</option>
+            
+          </select>
+        </div>
+       
+        <button class="submit" onclick="openPopup()">Submit</button>
+        <div class="popup" id="popup">
+          <img src="images/404-tick.png" alt="" class="tick">
+          <h2>Thank You!</h2>
+          <p>Yours details has been successfully submitted. Thanks!</p>
+          <button type="button" onclick="closePopup()">OK</button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      let subMenu = document.getElementById("subMenu");
+      function toggleMenu() {
+        subMenu.classList.toggle("open-menu");
+      }
+      let popup = document.getElementById("popup");
+      function openPopup(){
+        popup.classList.add("open-popup")
+      }
+      
+      function closePopup(){
+        popup.classList.remove("open-popup")
+      }
+    </script>
+  </body>
+</html>
