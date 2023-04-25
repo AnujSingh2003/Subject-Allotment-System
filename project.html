@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="https://w7.pngwing.com/pngs/270/212/png-transparent-education-graphic-designer-logo-education-course-art-red-thumbnail.png" type="image/x-icon">
     <title>Subject Allotment System</title>
     <link rel="stylesheet" href="project.css" />
   </head>
@@ -49,7 +50,7 @@
             </a>
             <a href="#" class="sub-menu-link">
               <img src="images/logout.png" alt="" />
-              <p>Logout</p>
+              <p id="redirect">Logout</p>
               <span>></span>
             </a>
           </div>
@@ -60,12 +61,12 @@
           <label>Name : </label>
           <select name="Names" id="main-menu" style="margin-left: 97px;">
             <option>--Select Your Name--</option>
-            <option value="Albert Einstein">Albert Einstein</option>
-            <option value="Marie Curie">Marie Curie</option>
-            <option value="Alexander Graham Bell">Alexander Graham Bell</option>
-            <option value="Neil Armstrong">Neil Armstrong</option>
-            <option value="Amartya Sen">Amartya Sen</option>
-            <option value="Judith Butler">Judith Butler</option>
+            <option class="font" value="Albert Einstein">Albert Einstein</option>
+            <option class="font" value="Marie Curie">Marie Curie</option>
+            <option class="font" value="Alexander Graham Bell">Alexander Graham Bell</option>
+            <option class="font" value="Neil Armstrong">Neil Armstrong</option>
+            <option class="font" value="Amartya Sen">Amartya Sen</option>
+            <option class="font" value="Judith Butler">Judith Butler</option>
             
           </select>
         </div>
@@ -73,9 +74,9 @@
           <label>Course : </label>
           <select name="Names" id="main-menu" style="margin-left: 89px;">
             <option>--Select the Course--</option>
-            <option value="Albert Einstein">Computer Science and Engineering</option>
-            <option value="Marie Curie">Computer Science and Engineering with AI/ML </option>
-            <option value="Alexander Graham Bell">Electrical Engineering</option>
+            <option class="font" value="Albert Einstein">Computer Science and Engineering</option>
+            <option class="font" value="Marie Curie">Computer Science and Engineering with AI/ML </option>
+            <option class="font" value="Alexander Graham Bell">Electrical Engineering</option>
 
           </select>
         </div>
@@ -83,10 +84,10 @@
           <label>Elective subjects : </label>
           <select name="Names" id="main-menu"style="margin-left: 12px;">
             <option>--Select Elective subjects--</option>
-            <option value="Albert Einstein">Critical and Creative Thinking</option>
-            <option value="Marie Curie">Environmental Science</option>
-            <option value="Alexander Graham Bell">Biology</option>
-            <option value="Neil Armstrong">Professional Skill and Practices</option>
+            <option class="font" value="Albert Einstein">Critical and Creative Thinking</option>
+            <option class="font" value="Marie Curie">Environmental Science</option>
+            <option class="font" value="Alexander Graham Bell">Biology</option>
+            <option class="font" value="Neil Armstrong">Professional Skill and Practices</option>
            
           </select>
         </div>
@@ -94,11 +95,11 @@
           <label>Core Subjects : </label>
           <select name="Names" id="main-menu"style="margin-left: 35px;">
             <option>--Select Core subjects--</option>
-            <option value="Albert Einstein">Operating System</option>
-            <option value="Marie Curie">Chemistry</option>
-            <option value="Alexander Graham Bell">Semiconductor Physics</option>
-            <option value="Neil Armstrong">Discrete Mathematics</option>
-            <option value="Amartya Sen">Computer Organisation and Architecture</option>
+            <option class="font" value="Albert Einstein">Operating System</option>
+            <option class="font" value="Marie Curie">Chemistry</option>
+            <option class="font" value="Alexander Graham Bell">Semiconductor Physics</option>
+            <option class="font" value="Neil Armstrong">Discrete Mathematics</option>
+            <option class="font" value="Amartya Sen">Computer Organisation and Architecture</option>
             
           </select>
         </div>
@@ -126,6 +127,10 @@
       function closePopup(){
         popup.classList.remove("open-popup")
       }
+      document.querySelector('#redirect')
+      .addEventListener('click',()=>{
+        window.location.assign("index.html");
+      })
     </script>
   </body>
 </html>
