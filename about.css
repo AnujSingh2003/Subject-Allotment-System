@@ -54,6 +54,7 @@ html {
   text-align: center;
   cursor: pointer;
   width: 100%;
+  border-radius: 54px;
 }
 .member{
   border-radius: 50%;
@@ -62,6 +63,7 @@ html {
 margin-left: 126px;
 border: 3px solid black;
 cursor:pointer;
+
 }
 
 .button:hover {

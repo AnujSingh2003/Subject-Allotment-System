@@ -38,7 +38,7 @@
               <p>Edit Profile</p>
               <span>></span>
             </a>
-            <a href="#" class="sub-menu-link">
+            <a href="editprofile.html" class="sub-menu-link">
               <img src="images/setting.png" alt="" />
               <p>Settings & Privacy</p>
               <span>></span>
@@ -57,10 +57,11 @@
         </div>
       </nav>
       <div class="main">
+        <form action="connect.php" method="post"></form>
         <div class="menu">
           <label>Name : </label>
-          <select name="Names" id="main-menu" style="margin-left: 97px;">
-            <option>--Select Your Name--</option>
+          <select name="name" id="main-menu" style="margin-left: 97px;">
+            <option >--Select Your Name--</option>
             <option class="font" value="Albert Einstein">Albert Einstein</option>
             <option class="font" value="Marie Curie">Marie Curie</option>
             <option class="font" value="Alexander Graham Bell">Alexander Graham Bell</option>
@@ -72,7 +73,7 @@
         </div>
         <div class="menu">
           <label>Course : </label>
-          <select name="Names" id="main-menu" style="margin-left: 89px;">
+          <select name="course" id="main-menu" style="margin-left: 89px;">
             <option>--Select the Course--</option>
             <option class="font" value="Albert Einstein">Computer Science and Engineering</option>
             <option class="font" value="Marie Curie">Computer Science and Engineering with AI/ML </option>
@@ -82,7 +83,7 @@
         </div>
         <div class="menu">
           <label>Elective subjects : </label>
-          <select name="Names" id="main-menu"style="margin-left: 12px;">
+          <select name="elective" id="main-menu"style="margin-left: 12px;">
             <option>--Select Elective subjects--</option>
             <option class="font" value="Albert Einstein">Critical and Creative Thinking</option>
             <option class="font" value="Marie Curie">Environmental Science</option>
@@ -93,7 +94,7 @@
         </div>
         <div class="menu">
           <label>Core Subjects : </label>
-          <select name="Names" id="main-menu"style="margin-left: 35px;">
+          <select name="core" id="main-menu"style="margin-left: 35px;">
             <option>--Select Core subjects--</option>
             <option class="font" value="Albert Einstein">Operating System</option>
             <option class="font" value="Marie Curie">Chemistry</option>
